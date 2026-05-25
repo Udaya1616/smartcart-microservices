@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: order-service
+  config:
+    import: optional:configserver:http://localhost:8888
+product-service:
+  url: http://localhost:8082
+springdoc:
+  api-docs:
+    path: /api/orders/v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
